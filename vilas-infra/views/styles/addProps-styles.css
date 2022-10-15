@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+ h3{
+    letter-spacing: 0.2em;
+}
+
+.navbar{
+    background-color: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar.scrolled{
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    padding-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.navbar.scrolled .fa-bars{
+    color: black;
+}
+
+.navbar.scrolled .items .loginRegister li a{
+    color: #06408f;
+}
+
+.navbar-toggler , .btn-close{
+    border: none !important;
+    outline: none !important;
+    border-color: none !important;
+}
+
+.fa-bars{
+    color: #000;
+    font-size: 1.5em;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.btn-close:focus{
+    box-shadow: none !important;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+
+.items .loginRegister{
+    margin-right: 50px;
+}
+
+.items .loginRegister li a{
+    margin-left: 50;
+    color: #000;
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out;
+}
+
+.items .loginRegister li a:hover{
+    opacity: 0.4;
+}
+
+.loginRegister{
+    display: flex;
+    flex-direction: inherit;
+}
+
+.offcanvas-title{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Add property */
+
+.addProperty{
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+  }
+
+  .items-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .items-box .property{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50;
+    align-items: center;
+    justify-content: center;
+  }  
+
+  .items-box .property a{
+    display: flex;
+    background: #1d1e3c;
+    height: 95px;
+    width: 95px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .items-box .property a i{
+    color: #fff;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+  }
+
+  .items-box .property p{
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+
+  .items-box .property a:hover i{
+    font-size: 2em;
+  }
+
+  .properties .pic_1{
+    width: 13vw;
+    height: 55vh;
+    position: absolute;
+    left: 0;
+    top: -20vh;
+    z-index: -1;
+  }
+
+  /* propertt status */
+
+  .propertyStatus {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .propertyStatus .nav{
+    justify-content: center;
+  }
+  .propertyStatus .tab-content{
+    text-align: center;
+  }
+  .propertyStatus .content .nav-item{
+    margin-right: 50;
+  }
+  .propertyStatus .content .nav-link{
+    font-size: 1.1em;
+    color: #38A3A5;
+    border-radius: 0px;
+    position: relative;
+    border-bottom: 3px solid #fff;
+  }
+  .propertyStatus .content .nav-link:hover{
+    color: #22577A;
+    font-weight: bolder;
+  }
+  
+  .propertyStatus .content .nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: #22577A;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: all 0.3s ease;
+  }
+  
+  .propertyStatus .content .nav-link:hover::after{
+    width: 100%;
+  }
+  
+  .propertyStatus .content .nav-link.active{
+    background-color: #fff;
+  }
+  
+  .propertyStatus .content .nav-link.active{
+    width: 100%;
+    border-bottom: 3px solid #22577A;
+    color: #22577A;
+    font-weight: bolder;
+  }
+
+  .propertyStatus .tab-content .row{
+    margin-top: 30px;
+  }
+  
+  .propertyStatus .card{
+    border: none;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 0px;
+  }
+  
+  .propertyStatus .card-img{
+    height: max-content;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .propertyStatus .card-img .type{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #06408f;
+    color: white;
+    padding: 5px;
+  }
+  
+  .propertyStatus .card-img .status{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  
+  .propertyStatus .card-img .status p{
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  .propertyStatus .card img{
+    width: 100%;
+    height: auto;
+  }
+
+  .propertyStatus .card .details{
+    text-align: left;
+    padding-top: 20;
+  }
+  .propertyStatus .card .details h3{
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+  }
+  
+  .propertyStatus .card .details p{
+    margin-bottom: 0;
+  }
+
+  .propertyStatus .footer{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #a2a2af;
+    margin-top: 10px;
+  }
+  
+  .propertyStatus .footer button{
+    width: max-content;
+    background-color: #06408f;
+    padding: 10 30 10 30;
+    color: white;
+    transition: all 0.5s ease;
+    letter-spacing: 0.2em;
+  }
+  
+  .propertyStatus .footer button i{
+    padding-left: 20;
+  }
+  
+  .propertyStatus .footer button:hover{
+    background-color: #06408f;
+    color: #fff;
+    letter-spacing: 0.3em;
+  }
+  .propertyStatus .ratings-footer{
+    display: none;
+  }
+  .propertyStatus .card-footer{
+    margin-top: 20px;
+    border-top: 0;
+  }
+
+  /* footer */
+
+.footer1{
+    margin-top: 100px;
+    background-color: aliceblue;
+  }
+  
+  .footer1 .row{
+    justify-content: space-evenly;
+  }
+  
+  .footer1 .row h5{
+    font-weight: bolder;
+    color: #1d1e3c;
+  }
+  
+  .footer1 .second-part{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer1 .second-part .form{
+    margin-top: 20px;
+  }
+  
+  .footer1 .second-part .form input, .footer1 .second-part .form select{
+    margin-bottom: 10px;
+  }
+  
+  .footer1 i{
+    font-size: 1.2em;
+    transition: all 0.5s ease;
+  }
+  
+  .fa-square-facebook:hover{
+    color: #3b5998;
+  }
+  
+  .fa-linkedin:hover{
+    color: #06408f;
+  }
+  .fa-square-twitter:hover{
+    color: #00ACEE;
+  }
+  .fa-envelope:hover{
+    color: #BB001B;
+  }
+  .fa-square-whatsapp:hover{
+    color: #25D366;
+  }
+  

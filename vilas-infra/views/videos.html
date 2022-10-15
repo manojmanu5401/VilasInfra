@@ -1,0 +1,396 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- bootStrapCssLink -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ 
+     <!-- fontawsome -->
+     <script src="https://kit.fontawesome.com/50bd49111d.js" crossorigin="anonymous"></script>
+     <!-- <link rel="stylesheet" href="video-styles.css"> -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+   <link rel="stylesheet" href="styles/video-styles.css">
+</head>
+<body>
+    <!-- navBar -->
+    <header class="primary-header">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="login.html"><img src="../public/logo1.png" alt=""></a>
+              <div class="items">
+                <ul class="navbar-nav loginRegister">
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Login/Register</a>
+                    </li>
+                  </ul>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                  </button>
+              </div>
+              
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Cart</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Wishlist</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Vouchers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Site visit bookings</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Loan calculator</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Enquiry</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Customer support</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Post your property</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    
+    <div class="videos container-fluid">
+        <div class="main-video">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/t0_qPFHEm-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="title">01. video title 01</h3>
+            </div>
+        </div>
+
+        <div class="video-list">
+            <div class="vid active">
+              <img src="https://i3.ytimg.com/vi/sh-TMLKMf8M/mqdefault.jpg" alt="">
+                <h3 class="title">02. video title 02</h3>
+            </div>
+            <div class="vid">
+                <img src="https://i3.ytimg.com/vi/cEWwJxEq9Lg/mqdefault.jpg">
+                <h3 class="title">03. video title 03</h3>
+            </div>
+            <div class="vid">
+              <img src="https://i3.ytimg.com/vi/_vktceH8ZA0/mqdefault.jpg">
+                <h3 class="title">04. video title 04</h3>
+            </div>
+            <div class="vid">
+              <img src="https://i3.ytimg.com/vi/B7bSbcYNfRw/mqdefault.jpg">
+                <h3 class="title">05. video title 05</h3>
+            </div>
+            <div class="vid">
+              <img src="https://i3.ytimg.com/vi/nYh-n7EOtMA/mqdefault.jpg">
+                <h3 class="title">06. video title 06</h3>
+            </div>
+            <div class="vid">
+              <img src="https://i3.ytimg.com/vi/RgKAFK5djSk/mqdefault.jpg">
+                <h3 class="title">07. video title 07</h3>
+            </div>
+            <div class="vid">
+              <img src="https://i3.ytimg.com/vi/81fRS0FildI/mqdefault.jpg">
+                <h3 class="title">08. video title 08</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories container-fluid">
+        <div class="catogery">
+            <h3>Category-01</h3>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="v-img">
+                        <img src="https://i3.ytimg.com/vi/t0_qPFHEm-g/mqdefault.jpg">
+                        </div>
+                        <a href="" target="_blank"><i class="fa-solid fa-circle-play play"></i></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="v-img">
+                        <img src="https://i3.ytimg.com/vi/sh-TMLKMf8M/mqdefault.jpg" alt="">
+                        </div>
+                        <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="v-img">
+                        <img src="https://i3.ytimg.com/vi/cEWwJxEq9Lg/mqdefault.jpg">
+                        </div>
+                        <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="v-img">
+                        <img src="https://i3.ytimg.com/vi/_vktceH8ZA0/mqdefault.jpg">
+                        </div>
+                        <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="v-img">
+                        <img src="https://i3.ytimg.com/vi/nYh-n7EOtMA/mqdefault.jpg">
+                        </div>
+                        <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div class="v-img">
+                        <img src="https://i3.ytimg.com/vi/RgKAFK5djSk/mqdefault.jpg">
+                        </div>
+                        <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                    </div>
+                  </div>
+        
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <div class="categories container-fluid">
+      <div class="catogery">
+          <h3>Category-02</h3>
+          <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="v-img">
+                      <img src="https://i3.ytimg.com/vi/t0_qPFHEm-g/mqdefault.jpg">
+                      </div>
+                      <a href="" target="_blank"><i class="fa-solid fa-circle-play play"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="v-img">
+                      <img src="https://i3.ytimg.com/vi/sh-TMLKMf8M/mqdefault.jpg" alt="">
+                      </div>
+                      <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="v-img">
+                      <img src="https://i3.ytimg.com/vi/cEWwJxEq9Lg/mqdefault.jpg">
+                      </div>
+                      <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="v-img">
+                      <img src="https://i3.ytimg.com/vi/_vktceH8ZA0/mqdefault.jpg">
+                      </div>
+                      <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="v-img">
+                      <img src="https://i3.ytimg.com/vi/nYh-n7EOtMA/mqdefault.jpg">
+                      </div>
+                      <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="v-img">
+                      <img src="https://i3.ytimg.com/vi/RgKAFK5djSk/mqdefault.jpg">
+                      </div>
+                      <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer1">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          
+          <div class="col-6 col-md-2">
+            <h5>Properties</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Villas</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Apartments</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Commercial</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Plots</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2">
+            <h5>Architecture</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Furniture</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lights</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wall papers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">automation</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cloths</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2">
+            <h5>Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Real estate promotions</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Business promotations</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Architecture services</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">MEP Services</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ready mix concreate</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Stone stores</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h5>Policy</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Return Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Listing policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">MEP Services</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Payments policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Booking policy</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="second-part d-flex py-4 border-top">
+          <div class="img"><img src="../public/logo1.png" alt=""></div>
+          <div class="form">
+            <form>
+                <div class="row mb-3">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+
+        <div class="foot d-flex flex-column flex-sm-row justify-content-between border-top">
+          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+<!-- bootStrapJsLink -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script src="index.js"></script>
+<script>
+    // $(document).ready(function () {
+    // var youtubeid = $(".youtubeimg").attr("src").match(/[\w\-]{11,}/)[0];
+    //    alert(youtubeid);
+    //  });
+    let listVideos = document.querySelectorAll('.video-list .vid');
+    let mainVideo = document.querySelector('.main-video iframe');
+    let title = document.querySelector('.main-video .title');
+
+    listVideos.forEach(video =>{
+        video.onclick = () =>{
+            listVideos.forEach(vid => vid.classList.remove('active'));
+            video.classList.add('active');
+            if(video.classList.contains('active')){
+                let src = video.children[0].getAttribute('src').match(/[\w\-]{11,}/)[0];
+                mainVideo.src ="https://www.youtube.com/embed/"+src;
+                let text = video.children[1].innerHTML;
+                title.innerHTML =text;
+            }
+        }
+    })
+
+    var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      430: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      320:{
+        slidesPerView: 1,
+        spaceBetween: 50,
+      }
+    }
+  });
+</script>
+</html>

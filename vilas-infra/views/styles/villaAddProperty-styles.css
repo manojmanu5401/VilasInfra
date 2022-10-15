@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    background-color: none !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar.scrolled{
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    padding-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.navbar.scrolled .fa-bars{
+    color: black;
+}
+
+.navbar.scrolled .items .loginRegister li a{
+    color: #06408f;
+}
+
+.navbar-toggler , .btn-close{
+    border: none !important;
+    outline: none !important;
+    border-color: none !important;
+}
+
+.fa-bars{
+    color: #000;
+    font-size: 1.5em;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.btn-close:focus{
+    box-shadow: none !important;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+
+.items .loginRegister{
+    margin-right: 50px;
+}
+
+.items .loginRegister li a{
+    margin-left: 50;
+    color: #000;
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out;
+}
+
+.items .loginRegister li a:hover{
+    opacity: 0.4;
+}
+
+.loginRegister{
+    display: flex;
+    flex-direction: inherit;
+}
+
+.offcanvas-title{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* main */
+h2{
+    line-height: 1.25;
+    font-weight: bold;
+    margin: 0 0 0.5em;
+}
+
+.site{
+    margin-top: 100px;
+}
+
+ul{
+    list-style: none;
+}
+.container1{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    border-radius: 15px;
+}
+
+/* progress status */
+.form-box .progress1{
+    position: relative;
+    padding: 1em;
+}
+.form-box .progress1 ul.progress-steps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.form-box .progress1 ul.progress-steps li{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.form-box .progress1 ul.progress-steps li > span{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    z-index: 1;
+}
+
+.form-box .progress1 ul.progress-steps li.active > span{
+    color: white;
+    background-color: #06408f;
+    border: 4px solid #97D2EC;
+    z-index: 1;
+}
+
+.progress1 ul.progress-steps li p span{
+    font-size: small;
+    color: rgb(97, 94, 94);
+    display: none;
+}
+
+.form-box form{
+    width: 100%;
+    padding: 0em 1em;
+}
+
+.form-box form label span{
+    color: red;
+}
+
+.btn-group1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.btn-group1 button:hover{
+    background-color: #06408f !important;
+    color: white !important;
+}
+
+.btn-group1 [class*="btn-"]{
+    background-color: #06408f;
+    color: white;
+    padding: 0.6em 2em;
+}
+
+.btn-group1 [class*="btn-"]:disabled{
+    background-color: #B7C4CF;
+}
+
+.progress1 ul li p{
+    position: absolute;
+    top: -2em;
+    font-size: 16px;
+    /* width: 100px; */
+}
+form .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.form-box form > div:not(.btn-group1){
+    display: none;
+    -webkit-animation: fadeIn .6s cubic-bezier(0.39, 0.575, 0.565 ,1) both;
+    animation: fadeIn .6s cubic-bezier(0.39, 0.575, 0.565 ,1) both;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(10%);
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.form-box form > div.active{
+    display: flex;
+}
+
+.btn-group1 .btn{
+    display: none;
+}
+.form-one.active ~ .btn-group1 .btn-next{
+    display: block;
+}
+
+.form-two.active ~ .btn-group1 .btn-submit,
+.form-two.active ~ .btn-group1 .btn-prev{
+    display: block;
+}
+
+@media screen and (min-width: 770px){
+    .form-box{
+        flex-direction: row;
+    }
+    .form-box .progress1{
+        flex: 1 0 35%;
+        min-width: 300px;
+        padding: 3em;
+    }
+    .form-box .progress1 ul.progress-steps{
+        flex-direction: column;
+        gap: 0;
+    }
+    .progress1 ul.progress-steps li:not(:last-child)::before{
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        width: 2px;
+        height: 65px;
+        background-color: #EDEDED;
+    }
+    .form-box form{
+        padding: 3em;
+    }
+    .progress1 ul li p{
+        position: relative;
+        top: auto;
+        font-size: inherit;
+    }
+    .progress1 ul.progress-steps li p span{
+        display: block;
+    }
+}

@@ -1,0 +1,938 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootStrapCssLink -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/50bd49111d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>VilasInfra</title>
+</head>
+<body>
+    <!-- navBar -->
+    <header class="primary-header">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="login.html"><img src="../public/logo1.png" alt=""></a>
+              <div class="items">
+                <ul class="navbar-nav loginRegister">
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Login/Register</a>
+                    </li>
+                  </ul>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                  </button>
+              </div>
+              
+              <div class="offcanvas offcanvas-end" data-bs-backdrop="static" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Cart</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Wishlist</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Vouchers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Site visit bookings</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Loan calculator</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Enquiry</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Customer support</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Notifications</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Post your property</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <!-- homePage -->
+    <div class="home">
+        <div class="column1">
+            <img src="../public/background_2.jpg" class="background_2" alt="">
+            <h1 class="heading1">Find your perfect home with <span class="villaInfra"> VilasInfra</span></h1>
+            <div class="search">
+                <p class="tag-line">Forget about the challenges of selecting a residence for you and quickly locate a variety of houses that fit you and explore the mordern interior of this era.</p>
+                <div class="search_box_wrapper">
+                    <div class="search_box_item search_box_item_1">
+                        <div class="search_box">
+                                <input type="text" class="input_search" placeholder="Search...">
+                              <span class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                              </span>
+                          </div>
+                          <button>Search</button>
+                      </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Recently Viewed -->
+    <div class="recentlyViewed container-fluid">
+      <h1>Recently Viewed</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+            <div class="card-img">
+              <img src="../public/pic_7.jpg" alt="">
+              <div class="status">
+                <p>Furniture</p>
+              </div>
+              <div class="ratings">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+            </div>
+            <div class="details">
+              <h3>Hayao 5 Door Office Cabinet In Wenge Finish</h3>
+              <p class="company">Mintwud</p>
+              <p class="cost">₹ 7000 <span class="old-cost">₹ 10,000</span></p>
+              <p class="percentage">30% Off</p>
+            </div>
+            <div class="footer">
+              <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+              <div class="ratings-footer">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../public/pic_9.jpg" alt="">
+                <p class="type">2BHK</p>
+                <div class="status">
+                  <p>Under Construction</p>
+                </div>
+              </div>
+              <div class="details">
+                <h3>Reddy Towers | <span class="price">30,000</span></h3>
+                <p class="address">90916 Mayer Greens Suite 978</p>
+                <p class="rera">RERA: P9749238764</p>
+                <p class="area">Area: 1200 SFT</p>
+              </div>
+              <div class="footer">
+                <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+                <p><i class="fa-solid fa-location-dot"></i> Miyapur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Properties -->
+    <div class="properties container-fluid">
+      <h1>Properties</h1>
+      <div class="items-box">
+        <div class="property">
+          <a href=""><span class="apartments"><i class="fa-solid fa-city"></i></span></a>
+          <p>Apartments</p>
+        </div>
+        <div class="property">
+          <a href=""><span class="villa"><i class="fa-solid fa-house-chimney"></i></span></a>
+          <p>Villa</p>
+        </div>
+        <div class="property">
+          <a href=""><span class="commercial"><i class="fa-solid fa-building-user"></i></span></a>
+          <p>Commercial</p>
+        </div>
+        <div class="property">
+          <a href=""><span class="plots"><i class="fa-solid fa-building"></i></span></a>
+          <p>Plots</p>
+        </div>
+        <div class="property">
+          <a href=""><span class="farmLands"><i class="fa-solid fa-tractor"></i></span></a>
+          <p>Farm Lands</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Site view -->
+    <div class="site-view container">
+      <div class="details">
+        <div class="text">
+          <h4>Elevate your Lifestyle</h4>
+          <p>Experience designer landscapes, lavish open spaces & vibrant communities</p>
+        </div>
+        <div class="button">
+          <button class="btn" type="button">Book a site visit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trending Properties -->
+    <div class="trendingProperties container-fluid">
+      <h1>Trending Properties</h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img">
+              <img src="../public/pic_3.jpg" loading="lazy" alt="">
+            </div>
+            <div class="details">
+              <h3>Apartemnt | <span class="price">30,000</span></h3>
+              <p class="address">90916 Mayer Greens Suite 978</p>
+            </div>
+            <div class="footer">
+              <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img">
+              <img src="../public/pic_4.jpg" loading="lazy" alt="">
+            </div>
+            <div class="details">
+              <h3>Farm Land | <span class="price">30,000</span></h3>
+              <p class="address">90916 Mayer Greens Suite 978</p>
+            </div>
+            <div class="footer">
+              <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img">
+              <img src="../public/pic_2.jpg" loading="lazy" alt="">
+            </div>
+            <div class="details">
+              <h3>Commercial | <span class="price">30,000</span></h3>
+              <p class="address">90916 Mayer Greens Suite 978</p>
+            </div>
+            <div class="footer">
+              <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img">
+              <img src="../public/pic_5.jpg" loading="lazy" alt="">
+            </div>
+            <div class="details">
+              <h3>Villa | <span class="price">30,000</span></h3>
+              <p class="address">90916 Mayer Greens Suite 978</p>
+            </div>
+            <div class="footer">
+              <button class="btn" type="button">Visit <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="architecture container-fluid">
+      <h1>Architecture</h1>
+      <div class="architecture-content">
+        <img src="../public/pic_7.jpg" alt="">
+        <div class="title-div">
+          <p class="title">Find Mordern Products For Your Home</p>
+        </div>
+        <div class="details">
+          <p class="tagLine">Bring your dream home to life with one-on-one design help & hand-picked products tailored to your style, space and budget.</p>
+          <button class="btn" type="button">Explore Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Engineering services -->
+    <div class="engineeringServices container-fluid">
+      <h1>Engineering services</h1>
+      <div class="items-box">
+        <div class="eService">
+          <a href=""><span class="rmc"><i class="fa-solid fa-helmet-safety"></i></span></a>
+          <p>RMC</p>
+        </div>
+        <div class="eService">
+          <a href=""><span class="formWork"><i class="fa-solid fa-file-lines"></i></span></a>
+          <p>Form Work</p>
+        </div>
+        <div class="eService">
+          <a href=""><span class="mep"><i class="fa-solid fa-user-gear"></i></span></a>
+          <p>MEP</p>
+        </div>
+        <div class="eService">
+          <a href=""><span class="ceiling"><i class="fa-solid fa-vector-square"></i></span></a>
+          <p>False ceiling</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- On Spot services -->
+    <div class="onSpot container-fluid">
+      <div class="content">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-readyToMove-tab" data-bs-toggle="pill" data-bs-target="#pills-readyToMove" type="button" role="tab" aria-controls="pills-readyToMove" aria-selected="true">Ready to Move</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-underConstruction-tab" data-bs-toggle="pill" data-bs-target="#pills-underConstruction" type="button" role="tab" aria-controls="pills-underConstruction" aria-selected="false">Under Constraction</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-preLaunch-tab" data-bs-toggle="pill" data-bs-target="#pills-preLaunch" type="button" role="tab" aria-controls="pills-preLaunch" aria-selected="false">Pre Launching</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-plots-tab" data-bs-toggle="pill" data-bs-target="#pills-plots" type="button" role="tab" aria-controls="pills-plots" aria-selected="false">Plots</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-readyToMove" role="tabpanel" aria-labelledby="pills-readyToMove-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_8.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Appartments <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_9.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Villas <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_10.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Commercials <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-underConstruction" role="tabpanel" aria-labelledby="pills-underConstruction-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_11.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Appartments <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_12.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Villas <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_13.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Commercials <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-preLaunch" role="tabpanel" aria-labelledby="pills-preLaunch-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_8.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Appartments <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_9.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Villas <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_10.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Commercials <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-plots" role="tabpanel" aria-labelledby="pills-plots-tab" tabindex="0">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_14.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Semi-Developed <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="../public/pic_15.jpg" alt="">
+                    <div class="link">
+                      <button class="btn" type="button">Developed <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Brands -->
+    <div class="topBrands container-fluid">
+      <h1>Our Brands</h1>
+      <div class="slider">
+        <div class="slider-tracker">
+          <div class="slide">
+            <img src="../public/logo_1.png" width="150" height="100" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_2.png" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_3.jpg" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_4.png" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_5.png" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_6.jfif" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_7.png" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_1.png" width="150" height="100" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_2.png" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_3.jpg" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_4.png" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_5.png" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_6.jfif" width="150" height="120" alt="">
+          </div>
+          <div class="slide">
+            <img src="../public/logo_7.png" width="150" height="120" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="engineeringServices container-fluid">
+      <h1>Services</h1>
+      <div class="items-box">
+        <div class="eService">
+          <a href=""><span class="rmc"><i class="fa-solid fa-helmet-safety"></i></span></a>
+          <p>Ceremony</p>
+        </div>
+        <div class="eService">
+          <a href=""><span class="formWork"><i class="fa-solid fa-file-lines"></i></span></a>
+          <p>Documentation</p>
+        </div>
+        <div class="eService">
+          <a href=""><span class="mep"><i class="fa-solid fa-user-gear"></i></span></a>
+          <p>Interior</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Awarness -->
+    <div class="awarness container-fluid">
+      <h1>Awarness</h1>
+      <div class="img">
+      <a href=""><img src="../public/awarness.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- Mobile App and News -->
+    <div class="mobile container">
+      <div class="row">
+        <div class="col-8 column1">
+          <h3>Download our app from both.</h3>
+          <div class="stories">
+            <a href=""><img src="../public/appstore.png" alt=""></a>
+            <a href=""><img src="../public/playstore.png" alt=""></a>
+          </div>
+          <a class="news-link" href="">Click here for VilasInfra news <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="col-4 column2">
+          <div class="mobile_img">
+            <img src="../public/mobile.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- videos -->
+    <div class="videos container-fluid">
+      <h1>Videos</h1>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="v-img">
+                <img src="https://i3.ytimg.com/vi/t0_qPFHEm-g/mqdefault.jpg">
+                </div>
+                <a href="videos.html" target="_blank"><i class="fa-solid fa-circle-play play"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="v-img">
+                <img src="https://i3.ytimg.com/vi/sh-TMLKMf8M/mqdefault.jpg" alt="">
+                </div>
+                <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="v-img">
+                <img src="https://i3.ytimg.com/vi/cEWwJxEq9Lg/mqdefault.jpg">
+                </div>
+                <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="v-img">
+                <img src="https://i3.ytimg.com/vi/_vktceH8ZA0/mqdefault.jpg">
+                </div>
+                <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="v-img">
+                <img src="https://i3.ytimg.com/vi/nYh-n7EOtMA/mqdefault.jpg">
+                </div>
+                <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="v-img">
+                <img src="https://i3.ytimg.com/vi/RgKAFK5djSk/mqdefault.jpg">
+                </div>
+                <a href=""><i class="fa-solid fa-circle-play play"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer1">
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          
+          <div class="col-6 col-md-2">
+            <h5>Properties</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Villas</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Apartments</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Commercial</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Plots</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2">
+            <h5>Architecture</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Furniture</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Lights</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wall papers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">automation</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cloths</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2">
+            <h5>Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Real estate promotions</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Business promotations</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Architecture services</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">MEP Services</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ready mix concreate</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Stone stores</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2">
+            <h5>Policy</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Return Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Listing policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">MEP Services</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Payments policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Booking policy</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="second-part d-flex py-4 border-top">
+          <div class="img"><img src="../public/logo1.png" alt=""></div>
+          <div class="form">
+            <form>
+                <div class="row mb-3">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+
+        <div class="foot d-flex flex-column flex-sm-row justify-content-between border-top">
+          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+<!-- bootStrapJsLink -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- <script src="index.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+      1440:{
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      430: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      320:{
+        slidesPerView: 1,
+        spaceBetween: 50,
+      }
+    }
+  });
+
+  var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoHeight: true,
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+    breakpoints: {
+      1440:{
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      430: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      320:{
+        slidesPerView: 1,
+        spaceBetween: 50,
+      }
+    }
+  });
+</script>
+<script>
+  $(window).scroll(function(){
+    $('nav').toggleClass('scrolled',$(this).scrollTop()>30);
+})
+</script>
+</html>
